@@ -8,7 +8,7 @@ function App() {
     <div>
       <center>
         <AppName />
-        <div class="container text-center">
+        <div className="container text-center">
           <AddTask />
           <TaskItem taskname="task 1" date="5/9/24" />
           <TaskItem taskname="task 2" date="6/9/24" />
