@@ -4,17 +4,21 @@ import AddTask from "./Components/AddTask";
 import TaskItem from "./Components/TaskItem";
 
 function App() {
+  const objectArr = [
+    { taskname: "learn react", date: "5/9/24" },
+    { taskname: "make prject", date: "5/9/24" },
+    { taskname: "deploy project", date: "5/9/24" },
+  ];
   return (
-    <div>
+    <>
       <center>
         <AppName />
-        <div className="container text-center">
+        <div className="container">
           <AddTask />
-          <TaskItem taskname="task 1" date="5/9/24" />
-          <TaskItem taskname="task 2" date="6/9/24" />
+          <TaskItem objectArr={objectArr} />
         </div>
       </center>
-    </div>
+    </>
   );
 }
 
